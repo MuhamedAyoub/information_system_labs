@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, rgba(10,43,43,0.95), #e2e2e2);" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group5.tp2.IndexController" >
+   <children>
+      <Button alignment="CENTER" defaultButton="true" layoutX="503.0" layoutY="333.0" lineSpacing="0.5" mnemonicParsing="false" prefHeight="35.0" prefWidth="76.0" style="-fx-background-color: green;" text="Confirm" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Mono" size="13.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="title" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="190.0" layoutY="27.0" prefHeight="29.0" prefWidth="281.0" text="IT Training Bootcamp" textAlignment="CENTER" textFill="#00f6ff" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="380.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@static.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="48.0" layoutY="203.0" prefHeight="29.0" prefWidth="101.0" text="Total Price :">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8500000238418579" green="0.8500000238418579" blue="0.8500000238418579" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8500000238418579" green="0.8500000238418579" blue="0.8500000238418579" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Ubuntu Mono" size="14.0" />
+         </font>
+      </Label>
+      <Text fill="#fffab9" fontSmoothingType="LCD" layoutX="148.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1200" wrappingWidth="85.0">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label layoutX="215.0" layoutY="111.0" prefHeight="16.0" prefWidth="85.0" text="Estimate:">
+         <font>
+            <Font name="Ubuntu Mono" size="18.0" />
+         </font>
+      </Label>
+
+   </children>
+</AnchorPane>

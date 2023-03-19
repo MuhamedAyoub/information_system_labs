@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, rgba(10,43,43,0.95), #e2e2e2);" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group5.tp2.IndexController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, rgba(10,43,43,0.95), #e2e2e2);" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group5.tp2.EndController">
+   <children>
+      <Label layoutX="178.0" layoutY="158.0" prefHeight="42.0" prefWidth="316.0" text="Rejected !">
+         <font>
+            <Font name="Ubuntu Mono" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9342105388641357" green="0.6833577156066895" blue="0.6833577156066895" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9868420958518982" green="0.03198099508881569" blue="0.03198099508881569" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="433.0" layoutY="323.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="93.0" style="-fx-background-color: #023c41;" text="Close" onAction="#CloseHandler"  textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Mono" size="14.0" />
+         </font></Button>
+   </children>
 </AnchorPane>

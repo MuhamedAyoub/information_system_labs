@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+fx:controller="group5.tp2.CheckoutController"
+-->
+
 <?import javafx.geometry.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
@@ -9,9 +13,9 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, rgba(10,43,43,0.95), #e2e2e2);" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group5.tp2.IndexController" >
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, rgba(10,43,43,0.95), #e2e2e2);" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group5.tp2.CheckoutController">
    <children>
-      <Button alignment="CENTER" defaultButton="true" layoutX="503.0" layoutY="333.0" lineSpacing="0.5" mnemonicParsing="false" prefHeight="35.0" prefWidth="76.0" style="-fx-background-color: green;" text="Confirm" textFill="WHITE">
+      <Button alignment="CENTER" defaultButton="true" layoutX="503.0" layoutY="333.0" lineSpacing="0.5" mnemonicParsing="false" onAction="#confirmHandler" prefHeight="35.0" prefWidth="76.0" style="-fx-background-color: green;" text="Confirm" textFill="WHITE">
          <font>
             <Font name="Ubuntu Mono" size="13.0" />
          </font>
@@ -59,16 +63,15 @@
             <Font name="Ubuntu Mono" size="14.0" />
          </font>
       </Label>
-      <Text fill="#fffab9" fontSmoothingType="LCD" layoutX="148.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1200" wrappingWidth="85.0">
-         <font>
-            <Font name="Ubuntu Mono Bold" size="14.0" />
-         </font>
-      </Text>
       <Label layoutX="215.0" layoutY="111.0" prefHeight="16.0" prefWidth="85.0" text="Estimate:">
          <font>
             <Font name="Ubuntu Mono" size="18.0" />
          </font>
       </Label>
+      <Label fx:id="priceOutput" layoutX="149.0" layoutY="203.0" prefHeight="29.0" prefWidth="113.0" text="\$0" textFill="#fffab9">
+         <font>
+            <Font name="Ubuntu Mono" size="14.0" />
+         </font></Label>
 
    </children>
 </AnchorPane>

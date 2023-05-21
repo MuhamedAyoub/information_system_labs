@@ -2,7 +2,8 @@ import java.util.*;
 
 public class BasicMethods {
 
-    // Method to calculate the sum of even numbers in an ArrayList
+    // 1- Create a method that takes an ArrayList of integers as input and returns the sum of all even
+    // numbers in the list. Example Input: [1, 2, 3, 4, 5, 6] Example Output: 12
     public static int sumOfEvenNumbers(ArrayList<Integer> numbers) {
         int sum = 0;
         for (int num : numbers) {
@@ -15,7 +16,7 @@ public class BasicMethods {
 
     // Method to remove strings of length less than 5 from a LinkedList
     public static LinkedList<String> removeShortStrings(LinkedList<String> strings) {
-        LinkedList<String> result = new LinkedList<>();
+        LinkedList<String> result = new LinkedList<String>();
         for (String str : strings) {
             if (str.length() >= 5) {
                 result.add(str);

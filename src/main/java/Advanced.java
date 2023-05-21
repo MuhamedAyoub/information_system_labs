@@ -81,7 +81,7 @@ public class Advanced {
             return wordDefinitions.keySet();
         }
     }
-    public void main(String[] args) {
+    public  static void main(String[] args) {
         Dictionary dictionary = new Dictionary();
         // Populate the dictionary with words and definitions
         dictionary.addWord("apple", "A fruit with a crisp and juicy flesh.");
